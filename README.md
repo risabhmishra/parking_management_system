@@ -8,7 +8,7 @@ You just need Python. The code is compatible with Python3. Visit the link https:
 
 ## Description
 
-This repository gives an overview of designing an An Automated Parking Ticketing based Parking Management System using Python.
+This repository gives an overview of designing an Automated Parking Ticketing based Parking Management System using Python.
 The Parking Management System can create n number of parking slots in a parking lot. It will issue a parking ticket on entrance terminal
 and receive back the parking ticket on the exit terminal. The parking ticket will contain vehicle registration number of car,
 age of the driver driving the car and parking slot allocated to the car. The parking slot allocated to a car will always be the nearest 
@@ -17,7 +17,7 @@ The Parking Management System can execute a set of predefined commands mentioned
 
 
 
-Few Assumptions made while designing the Parking Management System are :-
+Following assumptions have been made while designing the Parking Management System :-
 
 1. There will be maximum 1000 number of parking slots in a parking lot.
 2. There will be only 1 entrance and 1 exit in a parking lot.
@@ -27,8 +27,6 @@ Few Assumptions made while designing the Parking Management System are :-
 6. The Parking Ticket issued will contain - Vehicle Registration Number, Age of Driver and Parking Slot Assigned.
 7. Parking Management System should not allow more vehicles to enter than the number of parking slots.
 8. On Exit - Return the Parking Ticket and mark the parking slot used by vehicle as vacant
-
-
 
 Class ParkingManagement defines the following methods :-
 1. `create_parking_slots(self, max_capacity)` - Given max_capacity, Create max_capacity number of parking slots in a parking lot.
@@ -48,7 +46,7 @@ where the age of the driver of the car parked in that parking slot matches with 
 
 
 
-Predefined Commands that the ParkingManagement.py can execute in the form of queries specified in `<input_file>`:
+Predefined Commands that the Parking Management System can execute in the form of queries specified in `<input_file>`:
 1. `Create_parking_lot <max_capacity:int>`
 2. `Park <vehicle_registration_number:str> driver_age <driver_age:int>`
 3. `Leave <parking_slot:int>`
@@ -65,13 +63,13 @@ Model Classes used in this project are present inside `Models` directory. These 
 
 
 
-Python program ParkingManagement.py takes in a `<input_file>` as a mandatory input and a `<output_file>` as an optional input.
+Python program parking_management.py takes in a `<input_file>` as a mandatory input and a `<output_file>` as an optional input.
 It can print output to terminal console or write to an output file based on the optional input `<output_file>`.
 An example input_file `sample_input.txt` has been provided inside `Data` directory.
 
 
 I have followed TDD approach while designing this. `test_parking_management.py` present inside `Tests` directory 
-uses `unittest` module of python. Here 6 test cases are written in order to test each functionality mentioned in ParkingManagement.py
+uses `unittest` module of python. Here 6 test cases are written in order to test each functionality mentioned in parking_management.py
 
 ## Setup
 
@@ -79,12 +77,12 @@ To Setup and Run Parking Management System -
 
 1. Clone the repository
 
-2. Run `python ParkingManagement.py --input_file=<input_file_path>` to run without output_file. 
+2. Run `python3 parking_management.py --input_file=<input_file_path>` to run without output_file. 
 This will print all the output to terminal console.
   
-3. Run `python ParkingManagement.py --input_file=<input_file_path> --output_file=<output_file_path>` to run with output_file. 
+3. Run `python3 parking_management.py --input_file=<input_file_path> --output_file=<output_file_path>` to run with output_file. 
 This will write all the output to the output_file.
 
-4. You can also run the test cases separately as `python test_parking_management.py` present inside 'Tests' Directory. 
+4. You can also run the test cases separately as `python3 test_parking_management.py` present inside 'Tests' Directory. 
 This runs the 6 test cases written in file. 
 This is very useful when you want to create your own function and test it simultaneously.

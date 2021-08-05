@@ -1,5 +1,5 @@
 import unittest
-from ParkingManagement import ParkingManagement
+from parking_management import ParkingManagement
 
 
 class TestParkingLot(unittest.TestCase):
