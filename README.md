@@ -16,6 +16,7 @@ to the entrance terminal. On returning the parking ticket the parking slot will 
 The Parking Management System can execute a set of predefined commands mentioned below to perform some operations on the Parking Lot.
 
 
+
 Few Assumptions made while designing the Parking Management System are :-
 
 1. There will be maximum 1000 number of parking slots in a parking lot.
@@ -26,6 +27,7 @@ Few Assumptions made while designing the Parking Management System are :-
 6. The Parking Ticket issued will contain - Vehicle Registration Number, Age of Driver and Parking Slot Assigned.
 7. Parking Management System should not allow more vehicles to enter than the number of parking slots.
 8. On Exit - Return the Parking Ticket and mark the parking slot used by vehicle as vacant
+
 
 
 Class ParkingManagement defines the following methods :-
@@ -45,6 +47,7 @@ where the age of the driver of the car parked in that parking slot matches with 
 10. `parse_commands(self, query)` - Given an Input Query, Parse the command and arguments and execute the query.
 
 
+
 Predefined Commands that the ParkingManagement.py can execute in the form of queries specified in `<input_file>`:
 1. `Create_parking_lot <max_capacity:int>`
 2. `Park <vehicle_registration_number:str> driver_age <driver_age:int>`
@@ -53,11 +56,13 @@ Predefined Commands that the ParkingManagement.py can execute in the form of que
 5. `Slot_numbers_for_driver_of_age <driver_age:int>`
 6. `Vehicle_registration_number_for_driver_of_age <driver_age:int>`
 
+
 Model Classes used in this project are present inside `Models` directory. These include :-
 1. Class `Vehicle` - Vehicle Class acts as a parent base class for all types of vehicles, for instance in our case it is Car Class.
 2. Class `Car` - Class Car inherits from the Class Vehicle,and it contains information about the vehicle and the driver driving it.
 3. Class `Driver` - Class Driver contains all information about the driver.
 4. Class `ParkingTicket` - ParkingTicket class contains information about car, driver and the parking_slot in which the car is parked.
+
 
 
 Python program ParkingManagement.py takes in a `<input_file>` as a mandatory input and a `<output_file>` as an optional input.
