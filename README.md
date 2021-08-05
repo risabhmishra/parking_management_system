@@ -79,10 +79,13 @@ To Setup and Run Parking Management System -
 
 2. Run `python3 parking_management.py --input_file=<input_file_path>` to run without output_file. 
 This will print all the output to terminal console.
+
+![image](https://user-images.githubusercontent.com/21499789/128347936-029489c4-3218-4dcc-bd61-980005f26369.png)
   
 3. Run `python3 parking_management.py --input_file=<input_file_path> --output_file=<output_file_path>` to run with output_file. 
 This will write all the output to the output_file.
 
 4. You can also run the test cases separately as `python3 test_parking_management.py`. 
 This runs the 6 test cases written in file. 
-This is very useful when you want to create your own function and test it simultaneously.
+
+![image](https://user-images.githubusercontent.com/21499789/128348027-4d99b58c-88ca-459d-8b6d-ead1f41d2319.png)
