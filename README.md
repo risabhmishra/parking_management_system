@@ -68,8 +68,8 @@ It can print output to terminal console or write to an output file based on the 
 An example input_file `sample_input.txt` has been provided inside `Data` directory.
 
 
-I have followed TDD approach while designing this. `test_parking_management.py` present inside `Tests` directory 
-uses `unittest` module of python. Here 6 test cases are written in order to test each functionality mentioned in parking_management.py
+I have followed TDD approach while designing this. `test_parking_management.py` uses `unittest` module of python.
+Here 6 test cases are written in order to test each functionality mentioned in parking_management.py
 
 ## Setup
 
@@ -83,6 +83,6 @@ This will print all the output to terminal console.
 3. Run `python3 parking_management.py --input_file=<input_file_path> --output_file=<output_file_path>` to run with output_file. 
 This will write all the output to the output_file.
 
-4. You can also run the test cases separately as `python3 test_parking_management.py` present inside 'Tests' Directory. 
+4. You can also run the test cases separately as `python3 test_parking_management.py`. 
 This runs the 6 test cases written in file. 
 This is very useful when you want to create your own function and test it simultaneously.
